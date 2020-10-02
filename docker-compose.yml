@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./simulations/:/app/simulations/
+      - ./config/:/app/config/
     restart: always
     tty: true
     ports:

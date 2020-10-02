@@ -19,5 +19,7 @@ COPY --chown=node --from=builder /app/dist /app/dist/
 USER node
 ENV NODE_ENV production
 
-ENTRYPOINT ["/usr/local/bin/zenbot"]
-CMD ["trade","--paper"]
+# ENTRYPOINT ["/usr/local/bin/zenbot"]
+# CMD ["trade","--paper"]
+
+ENTRYPOINT ["sh"]
