@@ -4,7 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: fculpo/zenbot:latest
     volumes:
       - ./simulations/:/app/simulations/
     restart: always
